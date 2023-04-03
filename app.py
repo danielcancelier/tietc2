@@ -18,7 +18,7 @@ coordenadas = df[df['nome'] == nome][['latitude', 'longitude']]
 # Verificando se existe um arquivo .png com o mesmo nome do arquivo CSV
 image_file = nome + '.png'
 if os.path.isfile(image_file):
-    st.image(image_file, caption='é ele mesmo', width=100, use_column_width=False)
+    st.image(image_file, caption='é ele mesmo', use_column_width=False)
 
 # Verificando se existe um arquivo .wav com o mesmo nome do arquivo CSV
 audio_file = nome + '.wav'
